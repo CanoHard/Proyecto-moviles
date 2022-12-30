@@ -1,0 +1,8 @@
+prefix=/home/pablocano/Proyecto-moviles/catkin_ws/devel_isolated/TurtleMadero
+
+Name: TurtleMadero
+Description: Description of TurtleMadero
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: actionlib move_base_msgs rospy std_msgs
