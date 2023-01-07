@@ -1,3 +1,9 @@
 {
-    "cmake.sourceDirectory": "${workspaceFolder}/src/TurtleMadero"
+    "cmake.sourceDirectory": "${workspaceFolder}/src/TurtleMadero",
+    "ros.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/home/pablocano/Proyecto-moviles/catkin_ws/devel_isolated/TurtleMadero/lib/python3/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
 }

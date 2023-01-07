@@ -1,2 +1,2 @@
-TurtleMadero
+TurtleMadero:person_tracking_ros
 -DCATKIN_DEVEL_PREFIX=/home/pablocano/Proyecto-moviles/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pablocano/Proyecto-moviles/catkin_ws/install -G Unix Makefiles

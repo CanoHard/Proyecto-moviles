@@ -1,0 +1,12 @@
+<launch>
+  <!-- Set TURTLEBOT3_MODEL environment variable -->
+  <env name="TURTLEBOT3_MODEL" value="waffle"/>
+
+  <!-- Launch turtlebot3 in gazebo with house world -->
+  <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_house.launch"/>
+  <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
+    <arg name="map_file" value="/home/pablocano/Proyecto-moviles/mapa_house.yaml"/>
+  </include>
+  <include file="$(find person_tracking)/launch/person_tracker.launch"/>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+</launch>
