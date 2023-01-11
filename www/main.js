@@ -39,12 +39,21 @@ function init() {
         ros: ros, name: '/person_tracking/deepsort_image/compressed',
         messageType: 'sensor_msgs/CompressedImage'
     });
+
+    var person_number = new ROSLIB.Topic({
+        ros: ros, name: '/person_tracking/person_detections',
+        messageType: 'std_msgs/Int32'
+    });
     image_topic.subscribe(function (message) {
         document.getElementById('my_image').src = "data:image/jpg;base64," + message.data;
 
     });
     person_topic.subscribe(function (message) {
         document.getElementById('person_image').src = "data:image/jpg;base64," + message.data;
+    });
+
+    person_number.subscribe(function (message) {
+        document.getElementById("person-detec").innerHTML = message.data;
     });
     // Create the main viewer.
     var viewer = new ROS2D.Viewer({

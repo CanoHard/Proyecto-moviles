@@ -15,29 +15,32 @@
 </head>
 
 <body onload="init()">
-  
+
   <h1>Robot Segurata</h1>
-  <p>Estado conexión: <span id="status"></span></p>
+  <p>Estado conexión: <span id="status"></span>   &nbsp; &nbsp; &nbsp;   &nbsp;     Personas detectadas: <span id="person-detec"></span></p> 
+
 
   <table>
     <tr>
       <td rowspan="2">
         <div id="map"></div>
-   
+
         <div class="controls">
           <button id="clear" type="button">Borrar</button>
           <button id="loadp" type="button">Cargar patrulla</button>
           <button id="savep" type="button">Guardar patrulla</button>
-          <button id="run" type="button">Ejecutar patrulla</button> 
+          <button id="run" type="button">Ejecutar patrulla</button>
         </div>
 
       </td>
       <td>
         <div class="image-container">
           <p class="image-label">Cámara en vivo</p>
-          <img id="my_image" style="max-width:100% "   src="assets/img/placeholder.png">
+          <img id="my_image" style="max-width:100% " src="assets/img/placeholder.png">
         </div>
       </td>
+
+
     </tr>
     <tr>
 
@@ -47,6 +50,8 @@
           <img id="person_image" style="max-width:100% " src="assets/img/person.png">
         </div>
       </td>
+    </tr>
+
   </table>
 
   <!-- Add space vertical -->

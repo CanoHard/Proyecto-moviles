@@ -9,4 +9,6 @@
   </include>
   <include file="$(find person_tracking)/launch/person_tracker.launch"/>
   <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+  <node pkg="TurtleMadero" name="patrol2" type="patrol2.py" />  
+  <node pkg="TurtleMadero" name="telegram_persondetec" type="telegram_persondetec.py" />
 </launch>
