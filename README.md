@@ -37,3 +37,9 @@ python3 -m http.server
 
 A continuación, se debe abrir un navegador web y dirigirse a la dirección http://localhost:8001
 
+Por último, es necesario inicializar el bot de telegram realizando /start si todo ha funcionado correctamente este respondera a dicho comando.
+
+## Referencias 
+
+Para la detección de personas se ha empleado [person_tracking_ros](https://github.com/khayliang/person_tracking_ros) el cual se ha modificado 
+para su integración en el proyecto
