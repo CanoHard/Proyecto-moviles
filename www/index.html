@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Robot Segurata</title>
+<head> <!-- Cabecera de la página web -->
+  <title>Robot Segurata</title>  <!-- Título de la página web -->
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="main.js"></script>
-  <script type="text/javascript" src="http://static.robotwebtools.org/EaselJS/current/easeljs.min.js"></script>
+  <link rel="stylesheet" href="style.css"> <!-- Enlace a la hoja de estilos -->
+  <script type="text/javascript" src="main.js"></script> <!-- Enlace al archivo JavaScript -->
+  <script type="text/javascript" src="http://static.robotwebtools.org/EaselJS/current/easeljs.min.js"></script> <!-- Enlace a la librería EaselJS -->
   <script type="text/javascript"
-    src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
-  <script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
-  <script type="text/javascript" src="http://static.robotwebtools.org/ros2djs/current/ros2d.min.js"></script>
+    src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script> <!-- Enlace a la librería EventEmitter2 -->
+  <script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script> <!-- Enlace a la librería roslibjs -->
+  <script type="text/javascript" src="http://static.robotwebtools.org/ros2djs/current/ros2d.min.js"></script> <!-- Enlace a la librería ros2djs -->
 
 </head>
 
-<body onload="init()">
+<body onload="init()"> <!-- Inicialización de la página web -->
 
-  <h1>Robot Segurata</h1>
-  <p>Estado conexión: <span id="status"></span>   &nbsp; &nbsp; &nbsp;   &nbsp;     Personas detectadas: <span id="person-detec"></span></p> 
+  <h1>Robot Segurata</h1> <!-- Título de la página web -->
+  <p>Estado conexión: <span id="status"></span>   &nbsp; &nbsp; &nbsp;   &nbsp;     Personas detectadas: <span id="person-detec"></span></p>  <!-- Estado de la conexión y número de personas detectadas -->
 
 
-  <table>
+  <table> <!-- Tabla para mostrar la imagen de la cámara y la imagen de la detección de personas -->
     <tr>
-      <td rowspan="2">
+      <td rowspan="2"> <!-- Imagen de la cámara y el mapa -->
         <div id="map"></div>
 
-        <div class="controls">
-          <button id="clear" type="button">Borrar</button>
+        <div class="controls"> <!-- Botones de control -->
+          <button id="clear" type="button">Borrar</button> 
           <button id="loadp" type="button">Cargar patrulla</button>
           <button id="savep" type="button">Guardar patrulla</button>
           <button id="run" type="button">Ejecutar patrulla</button>
@@ -34,7 +34,7 @@
 
       </td>
       <td>
-        <div class="image-container">
+        <div class="image-container"> <!-- Imagen de la cámara -->
           <p class="image-label">Cámara en vivo</p>
           <img id="my_image" style="max-width:100% " src="assets/img/placeholder.png">
         </div>
@@ -45,7 +45,7 @@
     <tr>
 
       <td>
-        <div class="image-containe">
+        <div class="image-containe"> <!-- Imagen de la detección de personas -->
           <p class="image-label">Detección personas</p>
           <img id="person_image" style="max-width:100% " src="assets/img/person.png">
         </div>
